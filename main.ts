@@ -2,7 +2,7 @@ radio.onReceivedString(function (receivedString) {
     let waarde = ""
     if (receivedString.length == 12) {
         uur = waarde.substr(7, 2)
-    } else {
+    } else if (receivedString.length == 11) {
         uur = waarde.substr(7, 1)
     }
     draaien = true
